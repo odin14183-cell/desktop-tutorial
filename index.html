@@ -385,14 +385,35 @@
             position: absolute;
             inset: 0;
         }
+        .catalog-img {
+            height: 240px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            background: var(--primary-light);
+        }
         .catalog-img img {
             width: 100%;
             height: 220px;
-            object-fit: cover;
+            object-fit: contain;
+            background-color: #ffffff;
+            padding: 10px;
+            box-sizing: border-box;
             transition: transform 0.4s;
             display: block;
         }
         .catalog-card:hover .catalog-img img {
+            transform: scale(1.05);
+        }
+        .catalog-img svg {
+            width: 64px;
+            height: 64px;
+            color: rgba(26,54,93,0.25);
+            transition: transform 0.4s;
+        }
+        .catalog-card:hover .catalog-img svg {
             transform: scale(1.1);
         }
         .solution-icon img {
@@ -559,24 +580,6 @@
             border-color: rgba(26,54,93,0.3);
             box-shadow: var(--shadow-lg);
             transform: translateY(-5px);
-        }
-        .catalog-img {
-            height: 200px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-            background: var(--primary-light);
-        }
-        .catalog-img svg {
-            width: 64px;
-            height: 64px;
-            color: rgba(26,54,93,0.25);
-            transition: transform 0.4s;
-        }
-        .catalog-card:hover .catalog-img svg {
-            transform: scale(1.1);
         }
         .catalog-body {
             padding: 24px;
@@ -1244,7 +1247,7 @@
                 <!-- Карточка 1: Обратный осмос -->
                 <div class="catalog-card fade-in">
                     <div class="catalog-img">
-                        <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=800&q=80&auto=format&fit=crop" alt="Прозрачный стакан с чистой питьевой водой на кухне — обратный осмос" loading="lazy">
+                        <img src="https://filtr13.ru/wp-content/uploads/atoll-a-550-atoll-patriot.jpg" alt="Система обратного осмоса Atoll Патриот A-550 — популярная система для очистки воды" loading="lazy">
                     </div>
                     <div class="catalog-body">
                         <h3>Обратный осмос</h3>
@@ -1262,7 +1265,7 @@
                 <!-- Карточка 2: Магистральные фильтры -->
                 <div class="catalog-card fade-in">
                     <div class="catalog-img">
-                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80&auto=format&fit=crop" alt="Сантехника, смеситель и чистая вода — магистральные фильтры" loading="lazy">
+                        <img src="https://filtr13.ru/wp-content/uploads/gejzer-prestizh-m-768x496.jpg" alt="Проточная бытовая система предочистки воды Гейзер Престиж М — магистральные фильтры" loading="lazy">
                     </div>
                     <div class="catalog-body">
                         <h3>Магистральные фильтры</h3>
@@ -1280,7 +1283,7 @@
                 <!-- Карточка 3: Промышленная очистка -->
                 <div class="catalog-card fade-in">
                     <div class="catalog-img">
-                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80&auto=format&fit=crop" alt="Инженерное оборудование, трубы и манометры на производстве — промышленная очистка воды" loading="lazy">
+                        <img src="https://filtr13.ru/wp-content/uploads/akvafor-kristal-1200-770-768x493.jpg" alt="Высокопроизводительная коммерческая система очистки воды Аквафор Кристалл — промышленная очистка" loading="lazy">
                     </div>
                     <div class="catalog-body">
                         <h3>Промышленная очистка</h3>
@@ -1298,7 +1301,7 @@
                 <!-- Карточка 4: Обслуживание и замена картриджей -->
                 <div class="catalog-card fade-in">
                     <div class="catalog-img">
-                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80&auto=format&fit=crop" alt="Руки мастера в перчатках с инструментами — обслуживание и замена картриджей" loading="lazy">
+                        <img src="https://filtr13.ru/wp-content/uploads/890779_1.jpg" alt="Фирменные сменные картриджи и фильтрующие элементы для систем водоочистки" loading="lazy">
                     </div>
                     <div class="catalog-body">
                         <h3>Обслуживание и замена картриджей</h3>
